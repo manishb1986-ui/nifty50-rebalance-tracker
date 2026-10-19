@@ -1,0 +1,42 @@
+name: Nifty 50 rebalance tracker
+
+on:
+  schedule:
+    # 14:40 UTC = 20:10 IST, Monday-Friday (after NSE files update)
+    - cron: "40 14 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # commit data/ and reports/
+  issues: write     # open alert issues
+
+concurrency:
+  group: nifty50-data
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run tracker
+        env:
+          PYTHONPATH: src
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m nifty50_tracker run
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "data: Nifty 50 tracker $(date -u +%F)"
+          git pull --rebase --autostash && git push

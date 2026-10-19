@@ -1,0 +1,44 @@
+name: NSE participant OI download
+
+on:
+  schedule:
+    # NSE publishes between ~19:00 and ~23:00 IST (later on expiry days). Try several times.
+    - cron: "30 14 * * 1-5"   # 20:00 IST
+    - cron: "0 16 * * 1-5"    # 21:30 IST
+    - cron: "30 17 * * 1-5"   # 23:00 IST
+    - cron: "30 18 * * 1-5"   # 00:00 IST
+    - cron: "15 1 * * 2-6"    # 06:45 IST next morning
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nifty50-data
+  cancel-in-progress: false
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Download participant files
+        env:
+          PYTHONPATH: src
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m nifty50_tracker nse-participant
+      - name: Commit new files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nse
+          if git diff --cached --quiet; then echo "no new NSE file yet"; exit 0; fi
+          git commit -m "data: NSE participant files $(date -u +%F)"
+          git pull --rebase --autostash && git push
