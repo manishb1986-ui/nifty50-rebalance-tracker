@@ -1,11 +1,11 @@
 name: NSE participant OI download
 
 on:
-  schedule:
-    # NSE publishes between ~19:00 and ~23:00 IST (later on expiry days). Try several times.
-    - cron: "30 14 * * 1-5"   # 20:00 IST
-    - cron: "30 17 * * 1-5"   # 23:00 IST
-    - cron: "15 1 * * 2-6"    # 06:45 IST next morning
+schedule:
+    # off-peak minutes; NSE publishes ~19:00-23:00 IST
+    - cron: "23 14 * * 1-5"   # 19:53 IST, Mon-Fri
+    - cron: "23 17 * * 1-5"   # 22:53 IST, Mon-Fri
+    - cron: "11 1 * * 2-6"    # 06:41 IST next morning, Tue-Sat
   workflow_dispatch: {}
 
 permissions:
