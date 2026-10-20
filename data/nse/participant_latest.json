@@ -1,7 +1,7 @@
 {
   "date": "2026-10-19",
   "prev_date": "2026-10-16",
-  "generated_at": "2026-10-20T13:05+05:30",
+  "generated_at": "2026-10-20T14:56+05:30",
   "source_oi": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_oi_19102026.csv",
   "source_vol": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_vol_19102026.csv",
   "note": "Contracts. positions[leg] = [long, long_change, short, short_change]; Client = retail. All NSE index derivatives combined (no SENSEX).",
