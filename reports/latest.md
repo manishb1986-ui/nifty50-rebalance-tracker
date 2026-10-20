@@ -1,14 +1,9 @@
 # Nifty 50 Rebalance Tracker
-_Updated 2026-10-19 17:23 UTC._
+_Updated 2026-10-20 18:42 UTC._
 ## Status
 - Official list: **50 constituents** from `https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv`
 - Changes detected this run: **0**
-- New press releases mentioning Nifty 50: **3**
-
-## New NSE Indices press releases
-- [14 Oct 2026](https://niftyindices.com/Press_Release/ind_prs14102026.pdf) – effective 2026-10-19; IN: –; OUT: –
-- [13 Oct 2026](https://niftyindices.com/Press_Release/ind_prs13102026.pdf) – effective 2026-10-16; IN: –; OUT: –
-- [12 Oct 2026](https://niftyindices.com/Press_Release/ind_prs12102026.pdf) – effective 2026-10-13; IN: –; OUT: –
+- New press releases mentioning Nifty 50: **0**
 
 ## Change log (latest first)
 | effective_date | action | symbol | company | status | announced_on | source |
