@@ -1,9 +1,6 @@
 name: Telegram bot commands
 
 on:
-  schedule:
-    # every 30 min at :07 and :37 UTC, 07:37-22:07 IST (off-peak minutes)
-    - cron: "7,37 2-16 * * *"
   workflow_dispatch: {}
 
 permissions:
