@@ -1,5 +1,5 @@
 # Nifty 50 Rebalance Tracker
-_Updated 2026-10-20 18:42 UTC._
+_Updated 2026-10-21 18:53 UTC._
 ## Status
 - Official list: **50 constituents** from `https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv`
 - Changes detected this run: **0**
