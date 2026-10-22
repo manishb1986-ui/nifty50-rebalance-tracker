@@ -1,11 +1,12 @@
 {
   "consecutive_failures": 0,
   "last_source": "https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
-  "last_success": "2026-10-21",
+  "last_success": "2026-10-22",
   "seen_news": [],
   "seen_press_releases": [
     "https://niftyindices.com/Press_Release/ind_prs12102026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs13102026.pdf",
-    "https://niftyindices.com/Press_Release/ind_prs14102026.pdf"
+    "https://niftyindices.com/Press_Release/ind_prs14102026.pdf",
+    "https://niftyindices.com/Press_Release/ind_prs22102026.pdf"
   ]
 }
