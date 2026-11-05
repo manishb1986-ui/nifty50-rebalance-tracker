@@ -1,9 +1,14 @@
 # Nifty 50 Rebalance Tracker
-_Updated 2026-11-04 20:54 UTC._
+_Updated 2026-11-05 21:13 UTC._
 ## Status
 - Official list: **50 constituents** from `https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv`
 - Changes detected this run: **0**
-- New press releases mentioning Nifty 50: **0**
+- New press releases mentioning Nifty 50: **3**
+
+## New NSE Indices press releases
+- [05 Nov 2026](https://niftyindices.com/Press_Release/ind_prs05112026.pdf) – effective 2026-11-09; IN: –; OUT: –
+- [04 Nov 2026](https://niftyindices.com/Press_Release/ind_prs04112026.pdf) – effective 2026-11-06; IN: –; OUT: –
+- [04 Nov 2026](https://niftyindices.com/Press_Release/ind_prs04112026_1.pdf) – effective 2026-11-08; IN: –; OUT: –
 
 ## Change log (latest first)
 | effective_date | action | symbol | company | status | announced_on | source |
@@ -12,12 +17,12 @@ _Updated 2026-11-04 20:54 UTC._
 | 2026-09-30 | OUT | WIPRO | Wipro Ltd. | CONFIRMED | 2026-08-10 | https://niftyindices.com/Press_Release/ind_prs10082026.pdf |
 
 ## Strategy: buy on inclusion, hold 12 months
-- All inclusions incl. open: 1 trades, avg return 18.55%, avg alpha 13.29%
+- All inclusions incl. open: 1 trades, avg return 16.48%, avg alpha 10.56%
 
 | action | symbol | effective_date | entry_date | entry_price | exit_date | exit_price | return_pct | nifty_return_pct | alpha_pct | status | planned_exit |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| IN | BSE | 2026-09-30 | 2026-09-30 | 3092.0 | 2026-11-03 | 3665.7 | 18.55 | 5.26 | 13.29 | OPEN | 2027-09-30 |
-| OUT | WIPRO | 2026-09-30 | 2026-09-30 | 158.5 | 2026-11-03 | 198.0 | 24.92 | 5.26 | 19.66 | OPEN | 2027-09-30 |
+| IN | BSE | 2026-09-30 | 2026-09-30 | 3092.0 | 2026-11-04 | 3601.5 | 16.48 | 5.92 | 10.56 | OPEN | 2027-09-30 |
+| OUT | WIPRO | 2026-09-30 | 2026-09-30 | 158.5 | 2026-11-04 | 194.55 | 22.74 | 5.92 | 16.82 | OPEN | 2027-09-30 |
 
 ---
 Data: NSE `ind_nifty50list.csv`, NSE Indices press releases, Yahoo Finance prices. Educational use only; not investment advice.
