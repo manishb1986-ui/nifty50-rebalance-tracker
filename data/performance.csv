@@ -1,3 +1,3 @@
 symbol,company,action,effective_date,entry_date,entry_price,exit_date,exit_price,days_held,return_pct,nifty_return_pct,alpha_pct,status,planned_exit
-BSE,BSE Ltd.,IN,2026-09-30,2026-09-30,3092.0,2026-11-09,3816.6,40,23.43,10.72,12.71,OPEN,2027-09-30
-WIPRO,Wipro Ltd.,OUT,2026-09-30,2026-09-30,158.5,2026-11-09,199.0,40,25.55,10.72,14.83,OPEN,2027-09-30
+BSE,BSE Ltd.,IN,2026-09-30,2026-09-30,3092.0,2026-11-11,3906.0,42,26.33,11.65,14.68,OPEN,2027-09-30
+WIPRO,Wipro Ltd.,OUT,2026-09-30,2026-09-30,158.5,2026-11-11,197.99,42,24.91,11.65,13.26,OPEN,2027-09-30

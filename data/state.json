@@ -1,8 +1,10 @@
 {
   "consecutive_failures": 0,
   "last_source": "https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
-  "last_success": "2026-11-11",
-  "seen_news": [],
+  "last_success": "2026-11-12",
+  "seen_news": [
+    "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNFRLRFViU2J2UDRrbVdvbzRjM2tTNDFlaVpRdW5VcHVaZmF1UmRkSVNUNGJMc3hUN2pLaGVJbmJTMzg3dVlHRnNRRTA4VGdGOUtmT0NRanEtUlNVZVJyMDNRdEJoXy05UHpBcm9yRmh6UmQtYUZUY3dpV2NZYmFfQk8yb0tlclZvdVBJcVBaS2REQ1c5T1Q1X3ZpR1NFZmxkVzR0endwMkNNYmFmbldCOG9CZk9LelMxeGpVaGJ2bV9icUItZUM2TUVHZHNwRkNPNXExMVB6YlBoNWFKQW1GbGctZXlFYVdRRlFYMms4YlltVVEy0gH8AUFVX3lxTE1HaXhhdHNpRjFHeU54a2Z2Q0I4cTFZRHdVSWJsNmFEVmNGWlJCYkE0cGowUC1ZM01oRXJXN05NY1ZTSTZsYjAtRDkzc2Vhb014dHp4YXR3RkQySm9aell1ZEYxRjFsUVU0Vk5lTjhOUU5FR1pZSkdRWnkwNm5XcFV2al85UlBDZ0FjYk9oaUdFTEtVUVZ5ZHM2MTNlNm9HU3R2bVBBLUdLYVJpSXNnTVVuZ3Rjb3dERmF4VlpzNmoyTkh2YUJZZkxTNnhWeGx4V3hsankzbEtOOXM5cmlzNVRlNzcxbXBUMmE1TWNNd0haSkNTWG5nY1BsRUlyZg?oc=5"
+  ],
   "seen_press_releases": [
     "https://niftyindices.com/Press_Release/ind_prs03112026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs03112026_1.pdf",
@@ -11,7 +13,10 @@
     "https://niftyindices.com/Press_Release/ind_prs05112026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs06112026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs09112026.pdf",
+    "https://niftyindices.com/Press_Release/ind_prs11112026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs12102026.pdf",
+    "https://niftyindices.com/Press_Release/ind_prs12112026.pdf",
+    "https://niftyindices.com/Press_Release/ind_prs12112026_1.pdf",
     "https://niftyindices.com/Press_Release/ind_prs13102026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs14102026.pdf",
     "https://niftyindices.com/Press_Release/ind_prs22102026.pdf",
