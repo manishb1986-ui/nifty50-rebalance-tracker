@@ -1,5 +1,5 @@
 # Nifty 50 Rebalance Tracker
-_Updated 2026-11-16 23:29 UTC._
+_Updated 2026-11-17 22:37 UTC._
 ## Status
 - Official list: **50 constituents** from `https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv`
 - Changes detected this run: **0**
@@ -12,12 +12,12 @@ _Updated 2026-11-16 23:29 UTC._
 | 2026-09-30 | OUT | WIPRO | Wipro Ltd. | CONFIRMED | 2026-08-10 | https://niftyindices.com/Press_Release/ind_prs10082026.pdf |
 
 ## Strategy: buy on inclusion, hold 12 months
-- All inclusions incl. open: 1 trades, avg return 27.35%, avg alpha 16.19%
+- All inclusions incl. open: 1 trades, avg return 25.72%, avg alpha 13.91%
 
 | action | symbol | effective_date | entry_date | entry_price | exit_date | exit_price | return_pct | nifty_return_pct | alpha_pct | status | planned_exit |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| IN | BSE | 2026-09-30 | 2026-09-30 | 3092.0 | 2026-11-13 | 3937.7 | 27.35 | 11.16 | 16.19 | OPEN | 2027-09-30 |
-| OUT | WIPRO | 2026-09-30 | 2026-09-30 | 158.5 | 2026-11-13 | 194.6 | 22.78 | 11.16 | 11.62 | OPEN | 2027-09-30 |
+| IN | BSE | 2026-09-30 | 2026-09-30 | 3092.0 | 2026-11-16 | 3887.4 | 25.72 | 11.81 | 13.91 | OPEN | 2027-09-30 |
+| OUT | WIPRO | 2026-09-30 | 2026-09-30 | 158.5 | 2026-11-16 | 193.54 | 22.11 | 11.81 | 10.3 | OPEN | 2027-09-30 |
 
 ---
 Data: NSE `ind_nifty50list.csv`, NSE Indices press releases, Yahoo Finance prices. Educational use only; not investment advice.
