@@ -151,14 +151,19 @@ def run(today: date | None = None) -> int:
     log.info("participant data for %s written to %s", d_latest, LATEST_JSON)
 
     if old.get("date") != result["date"] or (old.get("flows") is None and result["flows"]):
-        fii = result["positions"]["FII"]["fut"]
-        cli = result["positions"]["Client"]["fut"]
-        def chg(x):
-            return "n/a" if x is None else f"{x:+,}"
-        notify.telegram(
-            f"NSE participant OI {d_latest:%d %b %Y}\n"
-            f"FII futures: long {fii[0]:,} ({chg(fii[1])}), short {fii[2]:,} ({chg(fii[3])}), "
-            f"net {fii[0] - fii[2]:+,}\n"
-            f"Retail futures: long {cli[0]:,} ({chg(cli[1])}), short {cli[2]:,} ({chg(cli[3])}), "
-            f"net {cli[0] - cli[2]:+,}")
+        notify.telegram(telegram_text(d_latest, result["positions"]))
     return 0
+
+
+# Telegram order and labels: Client is NSE's name for retail.
+TELEGRAM_ROWS = [("FII", "FII"), ("DII", "DII"), ("Client", "Retail"), ("Pro", "PRO")]
+
+
+def telegram_text(d: date, positions: dict) -> str:
+    def chg(x):
+        return "n/a" if x is None else f"{x:+,}"
+    lines = [f"NSE participant OI {d:%d %b %Y}"]
+    for who, label in TELEGRAM_ROWS:
+        L, dL, S, dS = positions[who]["fut"]
+        lines.append(f"{label} futures: long {L:,} ({chg(dL)}), short {S:,} ({chg(dS)}), net {L - S:+,}")
+    return "\n".join(lines)
