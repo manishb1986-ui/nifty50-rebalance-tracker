@@ -1,161 +1,161 @@
 {
-  "date": "2026-11-25",
-  "prev_date": "2026-11-23",
-  "generated_at": "2026-11-26T06:45+05:30",
-  "source_oi": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_oi_25112026.csv",
-  "source_vol": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_vol_25112026.csv",
+  "date": "2026-11-26",
+  "prev_date": "2026-11-25",
+  "generated_at": "2026-11-26T20:00+05:30",
+  "source_oi": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_oi_26112026.csv",
+  "source_vol": "https://nsearchives.nseindia.com/content/nsccl/fao_participant_vol_26112026.csv",
   "note": "Contracts. positions[leg] = [long, long_change, short, short_change]; Client = retail. All NSE index derivatives combined (no SENSEX).",
   "positions": {
     "Client": {
       "fut": [
-        146754,
-        -17058,
-        76915,
-        7269
+        150618,
+        3864,
+        77370,
+        455
       ],
       "call": [
-        2558883,
-        409319,
-        2491256,
-        401434
+        2929777,
+        370894,
+        2878071,
+        386815
       ],
       "put": [
-        2214240,
-        611721,
-        2645199,
-        623796
+        2759780,
+        545540,
+        3208984,
+        563785
       ],
       "stock_fut": [
-        3017677,
-        -2045,
-        209335,
-        16088
+        3029623,
+        11946,
+        226442,
+        17107
       ]
     },
     "DII": {
       "fut": [
-        54959,
-        2025,
-        39905,
-        6739
+        54517,
+        -442,
+        45968,
+        6063
       ],
       "call": [
-        9045,
-        1040,
-        1933,
-        -150
+        9192,
+        147,
+        2133,
+        200
       ],
       "put": [
-        47880,
-        -370,
-        1973,
-        126
+        48282,
+        402,
+        2173,
+        200
       ],
       "stock_fut": [
-        288613,
-        11396,
-        4263730,
-        50784
+        306239,
+        17626,
+        4288982,
+        25252
       ]
     },
     "FII": {
       "fut": [
-        38700,
-        8051,
-        123930,
-        2332
+        37660,
+        -1040,
+        126129,
+        2199
       ],
       "call": [
-        453411,
-        57701,
-        575534,
-        89641
+        535348,
+        81937,
+        644850,
+        69316
       ],
       "put": [
-        713682,
-        84489,
-        442714,
-        124831
+        774403,
+        60721,
+        558824,
+        116110
       ],
       "stock_fut": [
-        3418014,
-        20051,
-        2560938,
-        -32586
+        3424190,
+        6176,
+        2540254,
+        -20684
       ]
     },
     "Pro": {
       "fut": [
-        29834,
-        12313,
-        29497,
-        -11009
+        35510,
+        5676,
+        28838,
+        -659
       ],
       "call": [
-        743637,
-        149047,
-        696254,
-        126183
+        855079,
+        111442,
+        804342,
+        108088
       ],
       "put": [
-        811224,
-        231489,
-        697140,
-        178576
+        1055678,
+        244454,
+        868162,
+        171022
       ],
       "stock_fut": [
-        645556,
-        22026,
-        335857,
-        17142
+        652953,
+        7397,
+        357327,
+        21470
       ]
     }
   },
   "flows": {
     "Client": {
       "index_fut": [
-        74820,
-        99147,
-        -24327
+        47727,
+        44318,
+        3409
       ],
-      "call_net": 7885,
-      "put_net": -12075,
-      "stock_fut_net": -18133
+      "call_net": -15922,
+      "put_net": -18245,
+      "stock_fut_net": -5161
     },
     "DII": {
       "index_fut": [
-        2143,
-        6857,
-        -4714
+        2980,
+        9485,
+        -6505
       ],
-      "call_net": 1190,
-      "put_net": -496,
-      "stock_fut_net": -39388
+      "call_net": -53,
+      "put_net": 202,
+      "stock_fut_net": -7626
     },
     "FII": {
       "index_fut": [
-        33685,
-        27966,
-        5719
+        9003,
+        12242,
+        -3239
       ],
-      "call_net": -31940,
-      "put_net": -40342,
-      "stock_fut_net": 52637
+      "call_net": 12621,
+      "put_net": -55389,
+      "stock_fut_net": 26860
     },
     "Pro": {
       "index_fut": [
-        57947,
-        34625,
-        23322
+        26276,
+        19941,
+        6335
       ],
-      "call_net": 22865,
-      "put_net": 52913,
-      "stock_fut_net": 4884
+      "call_net": 3354,
+      "put_net": 73432,
+      "stock_fut_net": -14073
     }
   },
   "checks": {
     "futures_net_sum": 0,
-    "call_long_minus_short": -1,
+    "call_long_minus_short": 0,
     "put_long_minus_short": 0
   }
 }
